@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "vazirBold";
+    src: url("/fonts/FontsFree-Net-Vazir-Black.ttf");
+}
+
+@font-face {
+    font-family: "Vazir";
+    src: url("/fonts/FontsFree-Net-Vazir-Medium-1.ttf");
+}
+
+:root {
+    --lightBlue: #a9d6e5;
+    --darkBlue: #012a4a;
+    --mediumBlue: #2c7da0;
+}
+
+body {
+    direction: rtl;
+    font-family: Vazir;
+    .navbar {
+        font-family: vazirBold;
+        background-color: var(--lightBlue) !important;
+        .login,
+        .register {
+            border: none;
+            padding: 0.5em 2em !important;
+            // background-color: var(--mediumBlue);
+            // color: var(--darkBlue);
+            outline: none;
+            border-radius: 2em;
+        }
+    }
+}
+
+// Change bootstrap classes
+.navbar-light .navbar-nav .nav-link {
+    color: var(--darkBlue) !important;
+}
