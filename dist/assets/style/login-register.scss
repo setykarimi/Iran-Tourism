@@ -32,7 +32,7 @@ body {
         .login-box {
             background-color: #fff;
             border-radius: 1em;
-            padding: 1em;
+            padding: 2em;
             .btn-login{
                 background-color: #4ca1af;
                 color: #fff;
@@ -46,6 +46,11 @@ body {
                     box-shadow: none;
                     border: 2px solid #4ca1af;
                 }
+            }
+
+            .form-check .form-check-input {
+                float: right;
+                margin-left: 1em;
             }
         }
     }
