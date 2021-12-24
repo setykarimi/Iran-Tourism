@@ -3,7 +3,8 @@
   src: url("../fonts/Vazir.ttf");
 }
 
-*, html {
+*,
+html {
   scroll-behavior: smooth;
 }
 
@@ -20,16 +21,16 @@
 :root {
   scrollbar-color: #d2d2d2 #2e3645 !important;
   scrollbar-width: thin !important;
-  --white:#fff;
-  --lite:#f0f2f6;
-  --black:#000;
-  --dark:#262626;
-  --cream:#9b9b9b;
-  --yellow:#ffc107;
-  --primary:#01bcf5;
-  --secondary:#06062a;
-  --surface-color:#fff;
-  --curve:40;
+  --white: #fff;
+  --lite: #f0f2f6;
+  --black: #000;
+  --dark: #262626;
+  --cream: #9b9b9b;
+  --yellow: #ffc107;
+  --primary: #01bcf5;
+  --secondary: #06062a;
+  --surface-color: #fff;
+  --curve: 40;
 }
 
 ::-webkit-scrollbar {
@@ -69,7 +70,11 @@ button {
   transition: 0.5s;
 }
 
-a, button, input, select, textarea {
+a,
+button,
+input,
+select,
+textarea {
   outline: none !important;
   resize: none;
 }
@@ -80,6 +85,10 @@ p {
 
 fieldset {
   border: 0;
+}
+
+img {
+  border-radius: 1em !important;
 }
 
 .logo {
@@ -178,7 +187,8 @@ em {
 }
 
 @media (max-width: 820px) {
-  .btn1, .btn2 {
+  .btn1,
+  .btn2 {
     padding: 10px 20px;
   }
   .title_header {
@@ -369,7 +379,8 @@ header {
   text-align: left;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover,
+.dropdown:hover .dropbtn {
   color: #f9ae7d;
 }
 
@@ -386,7 +397,8 @@ header {
   .dropdown .dropbtn {
     padding: 14px 16px;
   }
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
   .topnav a.icon {
@@ -525,7 +537,8 @@ header {
   position: relative;
 }
 
-.left-col, .right-col {
+.left-col,
+.right-col {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -627,13 +640,15 @@ header {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
-.nav:hover .slide-up, .nav:hover .slide-down {
+.nav:hover .slide-up,
+.nav:hover .slide-down {
   opacity: 0.5;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-.nav .slide-up, .nav .slide-down {
+.nav .slide-up,
+.nav .slide-down {
   display: block;
   position: absolute;
   text-align: center;
@@ -644,11 +659,13 @@ header {
   z-index: 99;
 }
 
-.nav .slide-up:hover, .nav .slide-down:hover {
+.nav .slide-up:hover,
+.nav .slide-down:hover {
   opacity: 1;
 }
 
-.nav .slide-up a, .nav .slide-down a {
+.nav .slide-up a,
+.nav .slide-down a {
   text-decoration: none;
   font-weight: 300 !important;
 }
@@ -955,7 +972,8 @@ header {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.projectFactsWrap .item:hover i, .projectFactsWrap .item:hover p {
+.projectFactsWrap .item:hover i,
+.projectFactsWrap .item:hover p {
   color: white;
 }
 
@@ -1185,9 +1203,9 @@ footer .bottom_section {
   background-color: #006c8d;
   color: #fff;
   border-radius: 1em;
-  padding: .3em .6em .5em .6em;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  padding: 0.3em 0.6em 0.5em 0.6em;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .btn-go:hover {
@@ -1206,5 +1224,78 @@ footer .bottom_section {
 .card-img-top {
   width: 100% !important;
   height: 15em !important;
+}
+
+.city-body {
+  margin: 10em 0;
+  color: #666;
+}
+
+.city-body p {
+  text-align: justify;
+}
+
+.tour-body {
+  background-color: #fff;
+  border-radius: 2em;
+  padding: 1em;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.tour-body:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.tour-body h6 {
+  margin-bottom: 0;
+}
+
+.tour-body .tour-img {
+  border-radius: 1em;
+}
+
+.tour-body .tour-price span {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #ff7b00;
+  font-family: "vazir" !important;
+}
+
+.tour-body .tour-train {
+  background-color: whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.tour-body .reserve-tour button {
+  margin-right: 2em;
+  border: none;
+  border-radius: 1em;
+  background-color: #ff7b00;
+  color: #fff;
+  font-weight: bold;
+  outline: none;
+  padding: .3em 2em;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.tour-body .reserve-tour button:hover {
+  background-color: rgba(255, 123, 0, 0.247);
+  color: #707070;
+}
+
+.tour-body .reserve-tour .person {
+  border: none;
+  border-radius: 1em;
+  background-color: #e2e2e2;
+  padding: .5em 1em;
 }
 /*# sourceMappingURL=style.css.map */
