@@ -55,7 +55,7 @@
     margin: 0;
     overflow-x: hidden;
     box-sizing: border-box;
-    font-family: "vazir";
+    font-family: "vazir"!important;
     background-color: #eef6f1;
     direction: rtl;
   }
@@ -1124,3 +1124,30 @@
       }
     }
   }
+
+
+
+.btn-go{
+  border: none;
+  outline: none;
+  background-color: rgb(0, 108, 141);
+  color: #fff;
+  border-radius: 1em;
+  padding: .3em .6em .5em .6em;
+  transition: .3s ease;
+  &:hover{
+    transform: scale(1.05);
+    background-color: rgb(0, 142, 185);
+  }
+}
+
+.card{
+  border: none!important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px!important;
+  border-radius: 1.5em!important;
+}
+
+.card-img-top{
+  width: 100%!important;
+  height: 15em!important;
+}
